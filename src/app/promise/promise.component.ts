@@ -18,15 +18,65 @@ export class PromiseComponent implements OnInit {
     { id : 105, name:"sumit" }
 
   ];
-  
-  constructor() {
+
+   //it is used to store filterd list of employee
+   filteredEmployees: Employee[];
+   requestedEmployee;
+
+   //track search term
+   private _searchTerm: string;
+
+   get searchTerm(): string {
+    return this._searchTerm; //getter is called everytime when we need the value of this property 
   }
+
+  set searchTerm(value: string) {
+    this._searchTerm = value;
+    //in adition to assign value we want to filter employee
+    this.filteredEmployees = this.filtereEmployees(value);
+
+    // this.requestedEmployee = this.filtereEmployees(value);
+    // console.log(this.requestedEmployee);
+    // this.requestedEmployee.then(res=>{
+    //   this.filteredEmployees = res;
+    // }).catch(res=>{
+    //   this.filteredEmployees = res;      
+    // });
+  }
+  
+   // Ex:02
+   filtereEmployees(searchString: string) {
+    return this.employees.filter(employee => employee.name.toLowerCase().indexOf(searchString.toLowerCase()) !== -1);
+    
+    // return setTimeout(() => {
+    //   let employeeList = null;
+    //   return employeeList = new Promise((resolve,rejects)=>{
+      
+    //     this.employees.filter((employee)=>{
+          
+    //       if(employee.name.toLowerCase().indexOf(searchString.toLowerCase()) !== -1){
+    //           return resolve(employee);
+    //       }else{
+    //         return rejects(null);
+    //       }
+    //     });
+    //   });
+
+    // },3000);  
+  }
+
+
+  constructor() {
+
+    this.filteredEmployees = this.employees;
+    
+   }
   
   ngOnInit(): void { 
 
 
-    // Ex : 01
-    // promise take argument as function with two arguments
+    //Ex : 01
+    //promise take argument as function with two arguments
     // let getEmployee =  new Promise(function(resolve,rejects){
     //     resolve("promise is resolved ");
     // });
@@ -65,5 +115,7 @@ export class PromiseComponent implements OnInit {
       },3000);   
 
   }
+
+  
 }
 
