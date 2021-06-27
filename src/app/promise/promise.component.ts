@@ -44,7 +44,7 @@ export class PromiseComponent implements OnInit {
     // });
   }
   
-   // Ex:02
+   // Ex:03
    filtereEmployees(searchString: string) {
     return this.employees.filter(employee => employee.name.toLowerCase().indexOf(searchString.toLowerCase()) !== -1);
     
@@ -98,6 +98,28 @@ export class PromiseComponent implements OnInit {
       console.log("fail  #" ,res);
     });
 
+
+    // Ex:02
+    let response = { responseCode :200 , responseData : { id : 101, name:"pappu" } };
+
+    let searchEmployee = new Promise((resolve,rejects)=>{
+
+        if(response != null && response.responseCode == 200){
+          return setTimeout(() => {
+            resolve(response.responseData)  ;
+          }, 3000);
+        }else{
+          return setTimeout(() => {
+            rejects("not found")  
+          }, 3000);
+        }
+    });
+
+    searchEmployee.then(res=>{
+      console.log("success #",JSON.stringify(res));
+    }).catch(res=>{
+      console.log("fail  #",res);
+    })
   }
  
   getemployeeByEmployeeId(id:Number){
