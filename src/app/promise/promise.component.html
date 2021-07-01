@@ -1,11 +1,13 @@
 <div class="my-3">
-    <h5>promise demo</h5>
-    <input class="form-control me-2" type="search" aria-label="Search" placeholder="Search By Name"
-        name="searchTerm" [(ngModel)]="searchTerm">
+    <strong>promise demo</strong>
+    <hr>
+    <p>Ex: 03</p>
+    <input class="form-control me-2" type="search" aria-label="Search" placeholder="Search By Name" name="searchTerm"
+        [(ngModel)]="searchTerm">
     <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
     <!-- #{{ searchTerm }} -->
 </div>
-<div class="mt-3" >
+<div class="mt-3">
     <table class="table">
         <thead>
             <tr>
@@ -25,8 +27,38 @@
             <ng-template #msg>
                 <tr>
                     <th></th>
-                </tr>                
+                </tr>
             </ng-template>
         </tbody>
     </table>
+</div>
+<!-- #e3f2fd -->
+<div class="my-3" style="background-color: white">
+    <strong>Async / Await demo</strong>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Ex- 01 : with promise</strong>
+            <hr>
+            <button class="btn btn-primary" (click)="onClick();fetch1()">getEmployee</button>
+            <hr>
+            <div id="result1"></div>
+        </div>
+        <div class="col-md-4">
+            <strong>Ex- 01 : with Async / Await </strong>
+            <hr>
+            <button class="btn btn-primary" (click)="fetch2()">by laptop</button>
+            <hr>
+            <div id="result2"></div>
+        </div>
+        <div class="col-md-4">
+            <strong>Ex- 01 : with fetch API</strong>
+            <hr>
+            <button class="btn btn-primary" (click)="fetch3()">by laptop</button>
+            <hr>
+            <div id="result3"></div>
+        </div>
+    </div>
+
 </div>
