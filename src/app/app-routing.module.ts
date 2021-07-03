@@ -5,6 +5,7 @@ import { PromiseComponent } from './promise/promise.component';
 import { ObervableComponent } from './obervable/obervable.component';
 import { ListComponent } from './obervable/list/list.component';
 import { FromEventComponent } from './obervable/from-event/from-event.component';
+import { IntervalComponent } from './obervable/interval/interval.component';
 
 const appRoutes :Routes = [
 
@@ -14,7 +15,8 @@ const appRoutes :Routes = [
       
       // { path : 'list', component:ListComponent },
       { path : '', component:ListComponent },  //set default routes for observable
-      { path : 'fromEvent', component: FromEventComponent }
+      { path : 'fromEvent', component: FromEventComponent },
+      { path : 'interval', component: IntervalComponent }
 
 
   ]},

@@ -9,6 +9,7 @@ import { ObervableComponent } from './obervable/obervable.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ListComponent } from './obervable/list/list.component';
 import { FromEventComponent } from './obervable/from-event/from-event.component';
+import { IntervalComponent } from './obervable/interval/interval.component';
 
 // const appRoutes :Routes = [
 
@@ -24,7 +25,8 @@ import { FromEventComponent } from './obervable/from-event/from-event.component'
     PromiseComponent,
     ObervableComponent,
     ListComponent,
-    FromEventComponent
+    FromEventComponent,
+    IntervalComponent
   ],
   imports: [
     BrowserModule,

@@ -87,6 +87,12 @@ Ex:  .subscribe(
 -   fromEvent(targetElement,eventName) function of rxjs takes two argument targetElement i.e native element value of ElementRef and second one is event type i.e click...
 on subscribe it return stream of event data i.e observable 
 
+###### Interval 
+-  using it we can create stream of data . it take one argument which is time in `ms` . it continue to create stream of data until specified time fineshed. it can be stop creating stream of data, once subscription completed or unsubscribe that subscription .
+
+###### Timer
+-   it's a rxJs operator ,it work same like interval .Timer(dueTime:number,) it take two argument first one is dueTime i.e time after it will start and second one is interval 
+
 
 
 
