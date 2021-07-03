@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Promise
+
+  1. it is not part of angular or rxjs , its javascript part
+  2. is is used in asynchronous programming , it is only async
+  3. returns single value 
+	 - resolve (Yes)
+	 - reject (No)
+	 
+	 # definate and indefinate --means when we call service we will get specfic data or may be not i.e resolve or reject 
+	 # then / catch / finally 
+	  : "then" - if promise resolve then what to do next 
+	    "catch" - if promise fail then what to do next 
+
+Note : execute the code line by line and when asych call occurs ,execute that code in background and execute remaining code line by line of   same page 	
