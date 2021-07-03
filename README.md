@@ -61,7 +61,7 @@ observable work on data stream
 to use observable we need to subscribe it 
 code which is writen to subscribe is a observer 
 
-######observable stream
+###### observable stream
 
 : it can be created by 
 -   user inputs (Button click event)
@@ -69,18 +69,21 @@ code which is writen to subscribe is a observer
 -    Array 
 -    Objects ...
 
-######Observable Handles (subscribe)
+###### Observable Handles (subscribe)
 -   Data
 -   Error 
 -   Completion
 
-```Ex:  .subscribe(
+```
+Ex:  .subscribe(
     (data) => console.log(data),
     (error) => console.log(error),
     () => console.log(completion),
-)```
+)
 
-######From Event 
+```
+
+###### From Event 
 
 
 
