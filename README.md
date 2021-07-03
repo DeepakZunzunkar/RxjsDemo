@@ -25,3 +25,70 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Promise
+
+  1. it is not part of angular or rxjs , its javascript part.
+  2. is is used in asynchronous programming , it is only async.
+  3. returns single value.
+
+    - resolve (Yes)
+    - reject (No)
+
+  4. definate and indefinate 
+        - means when we call service we will get specfic data or may be not i.e resolve or reject .
+
+  5. then / catch / finally .
+
+    -   then 
+      > if promise resolve then what to do next 
+    -   catch 
+      > if promise fail then what to do next 
+
+
+> Note : execute the code line by line and when asych call occurs ,execute that code in background and execute remaining code line by line of  same page 	
+
+
+
+## Obervable 
+
+1. it can be async or sync
+2. return stream of value  
+
+observable is a stream of data and it emits data time to time
+observable work on data stream
+to use observable we need to subscribe it 
+code which is writen to subscribe is a observer 
+
+######observable stream
+
+: it can be created by 
+-   user inputs (Button click event)
+-    HTTP request 
+-    Array 
+-    Objects ...
+
+######Observable Handles (subscribe)
+-   Data
+-   Error 
+-   Completion
+
+```Ex:  .subscribe(
+    (data) => console.log(data),
+    (error) => console.log(error),
+    () => console.log(completion),
+)```
+
+######From Event 
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+ul.list{
+    list-style-type: none;
+    margin: 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.list li {
+
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+
+ul.list li a {
+
+    background: #f8f8f8;
+    color: #6296bb;
+    font-family: 'Roboto';
+    transition: .3s ease all;
+    line-height: 1;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.list li a:hover{
+    background: #e3f2fd;
+    color: #477698;
+    box-shadow: 0 0 60px #b3cada inset;
+    text-decoration: none;
+} 

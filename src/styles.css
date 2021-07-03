@@ -2,3 +2,14 @@
 .pointer{
     cursor: pointer;
 }
+
+.app-container{
+
+    background-color: beige;
+
+}
+
+.component-container{
+    padding: 2px;
+    margin-top: 10px !important;
+}

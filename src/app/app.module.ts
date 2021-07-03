@@ -7,6 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { PromiseComponent } from './promise/promise.component';
 import { ObervableComponent } from './obervable/obervable.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ListComponent } from './obervable/list/list.component';
+import { FromEventComponent } from './obervable/from-event/from-event.component';
 
 // const appRoutes :Routes = [
 
@@ -20,7 +22,9 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     HeaderComponent,
     PromiseComponent,
-    ObervableComponent
+    ObervableComponent,
+    ListComponent,
+    FromEventComponent
   ],
   imports: [
     BrowserModule,
