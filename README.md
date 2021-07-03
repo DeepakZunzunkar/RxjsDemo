@@ -84,6 +84,9 @@ Ex:  .subscribe(
 ```
 
 ###### From Event 
+-   fromEvent(targetElement,eventName) function of rxjs takes two argument targetElement i.e native element value of ElementRef and second one is event type i.e click...
+on subscribe it return stream of event data i.e observable 
+
 
 
 
