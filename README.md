@@ -35,8 +35,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 	 - resolve (Yes)
 	 - reject (No)
 	 
-	 # definate and indefinate --means when we call service we will get specfic data or may be not i.e resolve or reject 
-	 # then / catch / finally 
+  4. definate and indefinate --means when we call service we will get specfic data or may be not i.e resolve or reject 
+  5. then / catch / finally 
 	  : "then" - if promise resolve then what to do next 
 	    "catch" - if promise fail then what to do next 
 
