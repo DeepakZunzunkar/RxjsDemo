@@ -32,22 +32,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   1. it is not part of angular or rxjs , its javascript part.
   2. is is used in asynchronous programming , it is only async.
   3. returns single value.
-        
-        ```
-        resolve (Yes)
-        reject (No)
-
-        ```
-
+    - resolve (Yes)
+    - reject (No)
   4. definate and indefinate 
-        - means when we call service we will get specfic data or may be not i.e 
-         ** resolve or reject ** .
+        - means when we call service we will get specfic data or may be not i.e resolve or reject .
 
   5. then / catch / finally .
+
     **then**
-        - if promise resolve then what to do next 
+      > if promise resolve then what to do next 
     **catch** 
-        - if promise fail then what to do next 
+      > if promise fail then what to do next 
 
 
 > Note : execute the code line by line and when asych call occurs ,execute that code in background and execute remaining code line by line of  same page 	
