@@ -40,16 +40,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
         ```
 
   4. definate and indefinate 
-        - means when we call service we will get specfic data or may be not i.e ** resolve or reject ** .
+        - means when we call service we will get specfic data or may be not i.e 
+         ** resolve or reject ** .
 
   5. then / catch / finally .
-    
+    **then**
+        - if promise resolve then what to do next 
+    **catch** 
+        - if promise fail then what to do next 
 
-    ```
-	   **then**
-            - if promise resolve then what to do next 
-	   **catch** 
-            - if promise fail then what to do next 
-    ```
 
 > Note : execute the code line by line and when asych call occurs ,execute that code in background and execute remaining code line by line of  same page 	
