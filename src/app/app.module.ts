@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ListComponent } from './obervable/list/list.component';
 import { FromEventComponent } from './obervable/from-event/from-event.component';
 import { IntervalComponent } from './obervable/interval/interval.component';
+import { OfAndFromComponent } from './obervable/of-and-from/of-and-from.component';
 
 // const appRoutes :Routes = [
 
@@ -26,7 +27,8 @@ import { IntervalComponent } from './obervable/interval/interval.component';
     ObervableComponent,
     ListComponent,
     FromEventComponent,
-    IntervalComponent
+    IntervalComponent,
+    OfAndFromComponent
   ],
   imports: [
     BrowserModule,

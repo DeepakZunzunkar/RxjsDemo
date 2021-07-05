@@ -26,6 +26,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+[Rxjs Officaila site](https://www.learnrxjs.io/)
+[DOCS ](https://rxjs.dev/api/index/)
+[marble daigram Explaination](https://rxmarbles.com/)
 
 ## Promise
 
@@ -88,10 +91,33 @@ Ex:  .subscribe(
 on subscribe it return stream of event data i.e observable 
 
 ###### Interval 
--  using it we can create stream of data . it take one argument which is time in `ms` . it continue to create stream of data until specified time fineshed. it can be stop creating stream of data, once subscription completed or unsubscribe that subscription .
+-  using it we can create stream of data . it take one argument which is time in `ms` . it continue to create stream of data until specified time fineshed. it can be stop once subscription is completed or unsubscribe that subscription .
 
 ###### Timer
--   it's a rxJs operator ,it work same like interval .Timer(dueTime:number,) it take two argument first one is dueTime i.e time after it will start and second one is interval 
+-   it's a rxJs operator ,it work same like interval .Timer(dueTime:number,interval) it take two argument first one is dueTime i.e time after it will start and second one is interval i.e duration for which its creating stream of data .
+
+
+###### of() & from()  operator
+- `of()` operator Converts the arguments to an observable sequence. And `from()` operator Creates an Observable from an Array, an array-like object, a Promise, an iterable object, or an Observable-like object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
