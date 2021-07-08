@@ -13,4 +13,10 @@ export class UtilityService {
     document.getElementById(containerID).appendChild(el);
   }
 
+  appendElement(value, containerID,element){
+    let el = document.createElement(element);
+    el.innerText = value;
+    document.getElementById(containerID).appendChild(el);
+  }
+
 }

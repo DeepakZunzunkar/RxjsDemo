@@ -7,6 +7,7 @@ import { ListComponent } from './obervable/list/list.component';
 import { FromEventComponent } from './obervable/from-event/from-event.component';
 import { IntervalComponent } from './obervable/interval/interval.component';
 import { OfAndFromComponent } from './obervable/of-and-from/of-and-from.component';
+import { ToArrayComponent } from './obervable/to-array/to-array.component';
 
 const appRoutes :Routes = [
 
@@ -18,7 +19,8 @@ const appRoutes :Routes = [
       { path : '', component:ListComponent },  //set default routes for observable
       { path : 'fromEvent', component: FromEventComponent },
       { path : 'interval', component: IntervalComponent },
-      { path : 'of-from', component: OfAndFromComponent }
+      { path : 'of-from', component: OfAndFromComponent },
+      { path : 'toArray', component: ToArrayComponent }
 
 
   ]},

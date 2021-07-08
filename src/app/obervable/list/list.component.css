@@ -7,9 +7,11 @@ ul.list{
 }
 
 ul.list li {
-
+    
     width: calc(25% - 20px);
     margin: 10px;
+    border-radius: 25px;
+    border: 0.5px solid #6296bb;
 }
 
 ul.list li a {
@@ -23,6 +25,7 @@ ul.list li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 }
 
 ul.list li a:hover{

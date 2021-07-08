@@ -100,8 +100,9 @@ on subscribe it return stream of event data i.e observable
 ###### of() & from()  operator
 - `of()` operator Converts the arguments to an observable sequence. And `from()` operator Creates an Observable from an Array, an array-like object, a Promise, an iterable object, or an Observable-like object.
 
-
-
+###### toArray()  operator
+Collects all source emissions and emits them as an array when the source completes.
+operator transform data into desire output and transformation of data should be done before we get means before subscribe 
 
 
 
