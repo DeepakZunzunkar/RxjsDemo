@@ -12,6 +12,7 @@ import { FromEventComponent } from './obervable/from-event/from-event.component'
 import { IntervalComponent } from './obervable/interval/interval.component';
 import { OfAndFromComponent } from './obervable/of-and-from/of-and-from.component';
 import { ToArrayComponent } from './obervable/to-array/to-array.component';
+import { CustomObservableComponent } from './obervable/custom-observable/custom-observable.component';
 
 // const appRoutes :Routes = [
 
@@ -30,7 +31,8 @@ import { ToArrayComponent } from './obervable/to-array/to-array.component';
     FromEventComponent,
     IntervalComponent,
     OfAndFromComponent,
-    ToArrayComponent
+    ToArrayComponent,
+    CustomObservableComponent
   ],
   imports: [
     BrowserModule,

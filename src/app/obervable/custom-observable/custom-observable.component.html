@@ -1,0 +1,32 @@
+<div class="my-3">
+    <h4 style="font-family: 'Roboto';">Custom Observable    </h4>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Ex.01 ( Manual )</strong>
+            <hr>
+            <ul [ngClass]="status == 'completed' ? 'completed' : status == 'error' ? 'error' : ''" class="listItems" id="elContainer1"></ul>
+        </div>
+        <div class="col-md-4">
+            <strong>Ex.02 ( Custome Interval Observable )</strong>
+            <hr>
+            <ul class="listItems">
+                <li>Angular</li>
+                <li>TypeScript</li>
+                <li>Java</li>
+                <li>Node Js</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <strong>Ex:03 ( Random Names ) </strong>
+            <hr>
+            <p class="border rounded bg-light py-2 px-2">
+                <strong>Data :</strong>  
+                'Neel', 'Nitin', 'Mukesh',Meena,Teena,Reena
+            </p>
+            <hr>
+            <p>    <strong class="text-success">Current Name : </strong> Mukesh </p>
+            <span class="badge rounded-pill bg-success">Success</span>
+        </div>
+    </div>
+</div>
