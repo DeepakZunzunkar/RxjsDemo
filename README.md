@@ -107,7 +107,8 @@ operator transform data into desire output and transformation of data should be 
 ###### custom observable operator
 - to create custom observable there is create method  which takes argument as annonymous function like ES6 arrow function and emmit data by using next,error and complete method of it accordingly .
 
-
+###### map operator
+- it is used to transform data according to our needs ,after transformation it completely return new observable means it take one observable and converts it into another observable .
 
 
 

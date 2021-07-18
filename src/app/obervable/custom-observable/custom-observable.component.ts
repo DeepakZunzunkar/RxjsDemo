@@ -9,23 +9,13 @@ import { UtilityService } from 'src/app/app.services/utility.service';
 })
 export class CustomObservableComponent implements OnInit, OnDestroy {
 
-  // courses =[
-  //   { id:101, name: 'Angular'},
-  //   { id:102, name: 'JavaScript'},
-  //   { id:103, name: 'Java'},
-  //   { id:106, name: 'HTMl/CSS'},
-  //   { id:104, name: 'Paython'},
-  //   { id:105, name: 'Node JS'}
-
-  // ]
-
   courses: string[] = ['Angular', 'JavaScript', 'Java', 'HTMl/CSS', 'Paython', 'Node JS']
   status: string;
   status1: string;
   status3: string;
   subCustObs2: Subscription;
 
-  names: string[] = ['Neel', 'Nitin','Mukesh', '', 'Meena', 'Teena', 'Reena']
+  names: string[] = [ 'Neel','Nitin','Mukesh','','Revina','Meena','Teena','Reena']
   name: any;
   constructor(private _utility: UtilityService) { }
 
@@ -104,11 +94,11 @@ export class CustomObservableComponent implements OnInit, OnDestroy {
       let count = 0;
       setInterval(() => {
         observer.next(this.names[count]);
-        if (this.names[count] === 'Mukesh') {
-          observer.complete();
-        }
         if (this.names[count] == '') {
           observer.error(new Error('invalid'));
+        }
+        if (this.names[count] === 'Reena') {
+          observer.complete();
         }
         count++;
       }, 2000);

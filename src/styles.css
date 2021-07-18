@@ -44,3 +44,7 @@ ul.listItems.completed li{
     background-color: #00800030;
     border-color: green;
 } 
+
+.tw{
+    word-wrap: break-word !important;
+}

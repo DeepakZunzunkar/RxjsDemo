@@ -9,6 +9,7 @@ import { IntervalComponent } from './obervable/interval/interval.component';
 import { OfAndFromComponent } from './obervable/of-and-from/of-and-from.component';
 import { ToArrayComponent } from './obervable/to-array/to-array.component';
 import { CustomObservableComponent } from './obervable/custom-observable/custom-observable.component';
+import { MapComponent } from './obervable/map/map.component';
 
 const appRoutes :Routes = [
 
@@ -22,7 +23,8 @@ const appRoutes :Routes = [
       { path : 'interval', component: IntervalComponent },
       { path : 'of-from', component: OfAndFromComponent },
       { path : 'toArray', component: ToArrayComponent },
-      { path: 'custom', component: CustomObservableComponent }
+      { path: 'custom', component: CustomObservableComponent },
+      { path: 'map', component: MapComponent }
 
 
   ]},
