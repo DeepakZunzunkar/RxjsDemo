@@ -14,6 +14,7 @@ import { OfAndFromComponent } from './obervable/of-and-from/of-and-from.componen
 import { ToArrayComponent } from './obervable/to-array/to-array.component';
 import { CustomObservableComponent } from './obervable/custom-observable/custom-observable.component';
 import { MapComponent } from './obervable/map/map.component';
+import { PluckComponent } from './obervable/pluck/pluck.component';
 
 // const appRoutes :Routes = [
 
@@ -34,7 +35,8 @@ import { MapComponent } from './obervable/map/map.component';
     OfAndFromComponent,
     ToArrayComponent,
     CustomObservableComponent,
-    MapComponent
+    MapComponent,
+    PluckComponent
   ],
   imports: [
     BrowserModule,
