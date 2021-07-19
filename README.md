@@ -111,8 +111,7 @@ operator transform data into desire output and transformation of data should be 
 - it is used to transform data according to our needs ,after transformation it completely return new observable means it take one observable and converts it into another observable .
 
 ###### pluck operator
-- it is used to get particular property from our data means it plucks property of our data .
-
+- it is used to get particular property from our data means it get property value of our data .
 
 
 
