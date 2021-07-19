@@ -11,6 +11,7 @@ import { ToArrayComponent } from './obervable/to-array/to-array.component';
 import { CustomObservableComponent } from './obervable/custom-observable/custom-observable.component';
 import { MapComponent } from './obervable/map/map.component';
 import { PluckComponent } from './obervable/pluck/pluck.component';
+import { FilterComponent } from './obervable/filter/filter.component';
 
 const appRoutes :Routes = [
 
@@ -26,7 +27,8 @@ const appRoutes :Routes = [
       { path : 'toArray', component: ToArrayComponent },
       { path: 'custom', component: CustomObservableComponent },
       { path: 'map', component: MapComponent },
-      { path : 'pluck', component: PluckComponent}
+      { path : 'pluck', component: PluckComponent},
+      { path : 'filter', component: FilterComponent}
 
 
   ]},
