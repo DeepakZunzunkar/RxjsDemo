@@ -1,0 +1,123 @@
+<div class="my-3 text-monospace">
+    <h4 style="font-family: 'Roboto';">Filter Operator </h4>
+    <br>
+    <div class="row ">
+        <div class="col-md-6 ">
+            <p class="tw border rounded bg-light text-monospace py-2 px-2">
+                <strong>USER DATA</strong>
+            </p>    
+             <hr>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>
+                            {{ user.id }}
+                        </td>
+                        <td>
+                            {{ user.username }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6 ">
+            <p class="tw border rounded bg-light text-monospace py-2 px-2">        
+                <strong>EMPLOYEE DATA </strong>
+            </p>    
+            <hr>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>NAME</th>
+                        <th>DEPARTMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of employees">
+                        <td>
+                            {{ employee.firstName }}
+                        </td>
+                        <td>
+                            {{ employee.department.name }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row ">
+        <div class="col-md-4 ">
+            <strong>Ex.01 Filter User :</strong> by length
+            <hr>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of data1">
+                        <td>
+                            {{ user.id }}
+                        </td>
+                        <td>
+                            {{ user.username }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4 ">
+            <strong>Ex.01 Filter Employee :</strong> by department
+            <hr>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>NAME</th>
+                        <th>DEPARTMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of data2">
+                        <td>
+                            {{ employee.firstName }}
+                        </td>
+                        <td>
+                            {{ employee.department.name }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <div class="col-md-4 ">
+            <strong>Ex.01 Filter :</strong> by Nth Item
+            <hr>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>NAME</th>
+                        <th>DEPARTMENT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let employee of data2">
+                        <td>
+                            {{ employee.firstName }}
+                        </td>
+                        <td>
+                            {{ employee.department.name }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
+    
+</div>

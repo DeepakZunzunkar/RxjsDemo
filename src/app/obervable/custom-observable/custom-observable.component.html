@@ -1,0 +1,32 @@
+<div class="my-3">
+    <h4 style="font-family: 'Roboto';">Custom Observable </h4>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <strong>Ex.01 ( Manual )</strong>
+            <hr>
+            <ul [ngClass]="status == 'completed' ? 'completed' : status == 'error' ? 'error' : ''" class="listItems"
+                id="elContainer1"></ul>
+        </div>
+        <div class="col-md-4">
+            <strong>Ex.02 ( Custome Interval Observable )</strong>
+            <hr>
+            <ul class="listItems" [ngClass]="status1 == 'completed' ? 'completed' : status1 == 'error' ? 'error' : ''"
+                class="listItems" id="elContainer2"> </ul>
+        </div>
+        <div class="col-md-4">
+            <strong>Ex:03 ( Random Names ) </strong>
+            <hr>
+            <p class="tw border rounded bg-light text-monospace py-2 px-2">
+                <strong>Data :</strong>
+                'Neel','Nitin','Mukesh','','Revina','Meena','Teena','Reena'
+            </p>
+            <hr>
+            <p> <strong>Current Name : </strong> {{ name }} </p>
+            <span class="badge"
+                [ngClass]="status3 == 'completed' ? 'bg-success' : status3 == 'error' ? 'bg-danger' : 'bg-primary'">
+                {{ status3 == 'completed' ? 'Success' : status3 == 'error' ? 'Error' : 'Running'  }}
+            </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<div class="my-3">
+    <h4 style="font-family: 'Roboto';">Of and From</h4>
+    <br>
+    <strong>Ex.01 [ of() ] </strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <p class="border rounded bg-light py-2 px-2">
+                <strong>Data :</strong> of('Neel', 'Nitin', 'Mukesh')
+            </p>
+            <hr>
+            <strong>Result :</strong>
+            <ul id="elContainer1"> </ul>
+        </div>
+        <div class="col-md-6">
+            <p class="border rounded bg-light py-2 px-2">
+                <strong>Data :</strong> of( &#123; firstName:'Neel',middleName:'Nitin',lastName:'Mukesh' &#125; )
+            </p>
+            <hr>
+            <strong>Result :</strong>
+            <ul>
+                <li><strong>First Name : </strong>{{ employee.firstName }}</li>
+                <li><strong>Middle Name : </strong>{{ employee.middleName }}</li>
+                <li><strong>Last Name : </strong>{{ employee.lastName }}</li>
+            </ul>
+        </div>
+
+    </div>
+    <br>
+    <strong>Ex.02 [ from() ] </strong>
+    <hr>
+    <div class="row">
+        <div class="col-md-4">
+            <strong> #Array </strong>
+            <p class="border rounded bg-light py-2 px-2">
+                <strong>Data :</strong> from(['Neel', 'Nitin', 'Mukesh'])
+            </p>
+            <hr>
+            <strong>Result :</strong>
+            <ul id="elContainer3"> </ul>
+        </div>
+        <div class="col-md-4">
+            <strong> #Promise </strong>
+            <p class="border rounded bg-light py-2 px-2">
+                <strong>Data :</strong> converts promise to observable 
+            </p>
+            <hr>
+            <strong>Result : </strong>after 5 sec
+            <ul id="elContainer4"> </ul>
+        </div>
+        <div class="col-md-4">
+            <strong> #String </strong>
+            <p class="border rounded bg-light py-2 px-2">
+                <strong>Data :</strong> converts string to observable 
+            </p>
+            <hr>
+            <strong>Result : </strong>
+            <ul id="elContainer5"> </ul>
+        </div>
+    </div>
+</div>

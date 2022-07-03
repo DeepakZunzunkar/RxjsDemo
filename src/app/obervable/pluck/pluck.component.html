@@ -1,0 +1,42 @@
+<div class="my-3 text-monospace">
+    <h4 style="font-family: 'Roboto';">Pluck Operator </h4>
+    <br>
+    <div class="row ">
+        <div class="col-md-4 ">
+            <strong>Ex.01 Pluck :</strong> by property 
+            <hr>
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th>NAME</th>
+                </tr>
+            </thead>
+            <tbody>  
+                <tr *ngFor="let firstName of data1">
+                    <td>
+                        {{ firstName }}
+                    </td>
+                </tr>
+            </tbody> 
+            </table>
+        </div>  
+        <div class="col-md-4 ">
+            <strong>Ex.01 Pluck :</strong> by nested property 
+            <hr>
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th>DEPARTMENT</th>
+                </tr>
+            </thead>
+            <tbody>  
+                <tr *ngFor="let department of data2">
+                    <td>
+                        {{ department }}
+                    </td>
+                </tr>
+            </tbody> 
+            </table>
+        </div> 
+    </div>
+</div>

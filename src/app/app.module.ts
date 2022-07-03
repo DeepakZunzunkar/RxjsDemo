@@ -7,6 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { PromiseComponent } from './promise/promise.component';
 import { ObervableComponent } from './obervable/obervable.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ListComponent } from './obervable/list/list.component';
+import { FromEventComponent } from './obervable/from-event/from-event.component';
+import { IntervalComponent } from './obervable/interval/interval.component';
+import { OfAndFromComponent } from './obervable/of-and-from/of-and-from.component';
+import { ToArrayComponent } from './obervable/to-array/to-array.component';
+import { CustomObservableComponent } from './obervable/custom-observable/custom-observable.component';
+import { MapComponent } from './obervable/map/map.component';
+import { PluckComponent } from './obervable/pluck/pluck.component';
+import { FilterComponent } from './obervable/filter/filter.component';
 
 // const appRoutes :Routes = [
 
@@ -20,7 +29,16 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     HeaderComponent,
     PromiseComponent,
-    ObervableComponent
+    ObervableComponent,
+    ListComponent,
+    FromEventComponent,
+    IntervalComponent,
+    OfAndFromComponent,
+    ToArrayComponent,
+    CustomObservableComponent,
+    MapComponent,
+    PluckComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
