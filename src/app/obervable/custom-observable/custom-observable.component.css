@@ -1,20 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-.pointer{
-    cursor: pointer;
-}
 
-.app-container{
-
-    background-color: ivory;
-
-}
-
-.component-container{
-    padding: 2px;
-    margin-top: 10px !important;
-}
-
-ul.listItems{
+/* if we create element dynamicaly and adding CSS/class to them from here then viewEncapsulation issue raises so add this classes in globle stylesheet files */
+/* ul.listItems{
 
     list-style-type: none;
     padding: 0px;
@@ -38,13 +24,9 @@ ul.listItems.error li{
 }
 
 
-ul.listItems.completed li{
+ul.listItems.complete li{
 
     color: green;
     background-color: #00800030;
     border-color: green;
-} 
-
-.tw{
-    word-wrap: break-word !important;
-}
+}    */
