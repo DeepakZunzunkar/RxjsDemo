@@ -38,7 +38,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
     - resolve (Yes)
     - reject (No)
-
   4. definate and indefinate 
         - means when we call service we will get specfic data or may be not i.e resolve or reject .
 
