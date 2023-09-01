@@ -101,8 +101,15 @@ on subscribe it return stream of event data i.e observable
 
 ###### toArray()  operator
 - Collects all source emissions and emits them as an array when the source completes.
-operator transform data into desire output and transformation of data should be done before we get means before subscribe 
+operator transform data into desire output and transformation of data should be done before we get means before subscribe
+- using toArray we convert data into array.
 
+##### pipe
+- there was no concept of pipe in RxJs previous version , in latest version there is pipe concept
+  which is used to convert or transform data and there are some operator which use pipe called them as pipable operator.
+- before subscribing we can transform data using toArrya in pipe.
+- we can have operator chaining in pipe .seprate it by comma(,)
+  
 ###### custom observable operator
 - to create custom observable there is create method  which takes argument as annonymous function like ES6 arrow function and emmit data by using next,error and complete method of it accordingly .
 
