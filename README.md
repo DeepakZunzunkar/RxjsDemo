@@ -58,6 +58,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 1. it can be async or sync
 2. return stream of value  
 
+> An observable represents a sequence of values which can be observed
+
 observable is a stream of data and it emits data time to time
 observable work on data stream
 to use observable we need to subscribe it 
