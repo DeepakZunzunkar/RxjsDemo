@@ -2,8 +2,10 @@
     <h4 style="font-family: 'fantasy';">PROMISE</h4>
     <hr>
     <p>Ex: 03</p>
-    <input class="form-control me-2" type="search" aria-label="Search" placeholder="Search By Name" name="searchTerm"
-        [(ngModel)]="searchTerm">
+    <!-- <input class="form-control me-2" type="search" aria-label="Search" placeholder="Search By Name" name="searchTerm"
+        [(ngModel)]="searchTerm"> -->
+
+        <input class="form-control me-2" type="search" aria-label="Search" placeholder="Search By Name" name="searchTerm">    
     <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
     <!-- #{{ searchTerm }} -->
 </div>
@@ -16,17 +18,17 @@
                 <th scope="col-md-1">NAME</th>
             </tr>
         </thead>
-        <tbody *ngIf="filteredEmployees">
-            <ng-template>
-                <tr *ngFor="let employee of filteredEmployees">
-                    <th scope="col-md-1"></th>
-                    <th scope="col-md-1">#{{ employee.id }}</th>
-                    <th scope="col-md-1">{{ employee.name }}</th>
+        <tbody>
+            <ng-container *ngIf="employees">
+                <tr *ngFor="let employee of employees;index as i">
+                    <td scope="col-md-1">{{ i + 1}}</td>
+                    <td scope="col-md-1">{{ employee.id }}</td>
+                    <td scope="col-md-1">{{ employee.name }}</td>
                 </tr>
-            </ng-template>
+            </ng-container>
             <ng-template #msg>
                 <tr>
-                    <th></th>
+                    <th>okok</th>
                 </tr>
             </ng-template>
         </tbody>

@@ -12,7 +12,10 @@ export class FromEventComponent implements OnInit, AfterViewInit {
   @ViewChild('addBtn')
   addBtn: ElementRef;
 
-  constructor(private _utility:UtilityService) { }
+  @ViewChild('rmBtn')
+  rmBtn: ElementRef;
+
+  constructor(private _utility: UtilityService) { }
 
   ngOnInit(): void {
 
@@ -28,15 +31,27 @@ export class FromEventComponent implements OnInit, AfterViewInit {
 
   }
   ngAfterViewInit(): void {
-    
+
     let count = 1;
-    fromEvent(this.addBtn.nativeElement,'click').subscribe(res=>{
-        // console.log(res);
-        let countVal = "item "+count++;
-        // console.log(countVal);
-        this._utility.appendElementToListElement(countVal,'elContainer1');
+    fromEvent(this.addBtn.nativeElement, 'click').subscribe(res => {
+      // console.log(res);
+      let countVal = "item " + count++;
+      // console.log(countVal);
+      this._utility.appendElementToListElement(countVal, 'elContainer1');
     });
+
+    // fromEvent(this.rmBtn.nativeElement, 'click').subscribe(res => {
+    //   console.log(res);
+    //   let countVal = "item "+count++;
+    //   console.log(countVal);
+    //   this._utility.appendElementToListElement(countVal,'elContainer1');
+    // });
 
   }
 
+  onBTnClick() {
+    let counttt = 1;
+    let countVal = "item " + counttt++;
+    this._utility.appendElementToListElement(countVal, 'elContainer1');
+  }
 }

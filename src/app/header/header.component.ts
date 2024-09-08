@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   @ViewChild('obsBtn')
   obsBtn: ElementRef;
 
-  status;
+  status= 'observable';
 
   constructor() { }
 

@@ -31,10 +31,12 @@ export class PromiseComponent implements OnInit {
   private _searchTerm: string;
 
   get searchTerm(): string {
+    console.log("get search term called ..")
     return this._searchTerm; //getter is called everytime when we need the value of this property 
   }
 
   set searchTerm(value: string) {
+    console.log("set search term called ..")
     this._searchTerm = value;
     //in adition to assign value we want to filter employee
     this.filteredEmployees = this.filtereEmployees(value);
@@ -72,7 +74,9 @@ export class PromiseComponent implements OnInit {
 
   constructor() {
 
-    this.filteredEmployees = this.employees;
+    // this.filteredEmployees = this.employees;
+    console.log("constructor called ");
+    // console.log(this.filtereEmployees);
 
   }
 
@@ -81,51 +85,50 @@ export class PromiseComponent implements OnInit {
 
     //Ex : 01
     //promise take argument as function with two arguments
-    // let getEmployee =  new Promise(function(resolve,rejects){
-    //     
-    
-    ("promise is resolved ");
-    // });
+  //   let getEmployee =  new Promise(function(resolve,rejects){
+        
+  //  ("promise is resolved ");
+  //   });
 
     //shortcut # arrow functionn from ES6 
-    let getEmployee = new Promise((resolve, rejects) => {
-      // resolve("record found  ");
-      // rejects("record not found");
-      if (this.getemployeeByEmployeeId(102)) {
-        resolve("employee record found  ");
-      } else {
-        rejects("employee record not found ");
-      }
-    });
+    // let getEmployee = new Promise((resolve, rejects) => {
+    //   // resolve("record found  ");
+    //   // rejects("record not found");
+    //   if (this.getemployeeByEmployeeId(102)) {
+    //     resolve("employee record found  ");
+    //   } else {
+    //     rejects("employee record not found ");
+    //   }
+    // });
 
-    getEmployee.then(res => {
-      console.log("success #", res);
-    }).catch(res => {
-      console.log("fail  #", res);
-    });
+    // getEmployee.then(res => {
+    //   console.log("success #", res);
+    // }).catch(res => {
+    //   console.log("fail  #", res);
+    // });
 
 
     // Ex:02
-    let response = { responseCode: 200, responseData: { id: 101, name: "pappu" } };
+    // let response = { responseCode: 200, responseData: { id: 101, name: "pappu" } };
 
-    let searchEmployee = new Promise((resolve, rejects) => {
+    // let searchEmployee = new Promise((resolve, rejects) => {
 
-      if (response != null && response.responseCode == 200) {
-        return setTimeout(() => {
-          resolve(response.responseData);
-        }, 3000);
-      } else {
-        return setTimeout(() => {
-          rejects("not found")
-        }, 3000);
-      }
-    });
+    //   if (response != null && response.responseCode == 200) {
+    //     return setTimeout(() => {
+    //       resolve(response.responseData);
+    //     }, 3000);
+    //   } else {
+    //     return setTimeout(() => {
+    //       rejects("not found")
+    //     }, 3000);
+    //   }
+    // });
 
-    searchEmployee.then(res => {
-      console.log("success #", JSON.stringify(res));
-    }).catch(res => {
-      console.log("fail  #", res);
-    })
+    // searchEmployee.then(res => {
+    //   console.log("success #", JSON.stringify(res));
+    // }).catch(res => {
+    //   console.log("fail  #", res);
+    // })
   }
 
   getemployeeByEmployeeId(id: Number) {

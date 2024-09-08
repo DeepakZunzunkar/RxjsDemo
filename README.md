@@ -122,6 +122,16 @@ operator transform data into desire output and transformation of data should be 
 - it is used to get particular property from our data means it get property value of our data .
 
 
+### to Run Project Locally on same version ( 08-09-2024)
+ -  created .nvmrc file as you can find in root directory 
+ -  install node js version as per package.json  i.e 12 by using nvm 
+ -  ex: - nvm install 12 
+        - nvm use 12 
+        - npm install 
+        - npm install @angular/cli@10 --save-dev
+        - npx ng serve
+
+
 
 
 
